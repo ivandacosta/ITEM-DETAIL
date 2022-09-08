@@ -1,0 +1,7 @@
+.ItemDetailContainer {
+  display: flex;
+}
+
+.Link {
+  text-decoration: none;
+}
