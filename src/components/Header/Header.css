@@ -1,4 +1,15 @@
 header {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  background-color: #000;
+}
+
+header .Logo {
+  color: #fff;
+}
+
+.Cart {
+  color: #fff;
+  font-size: 1em;
 }

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import products from "../../components/products/ItemProducts";
 import { useParams } from "react-router-dom";
 
@@ -14,11 +13,11 @@ const ItemDetails = () => {
   useEffect(() => {
     const getData = new Promise((resolve) => {
       setTimeout(() => {
-        resolve(products);
+        resolve(products.filter((prod) => prod.id === Number(id)));
       }, 0);
     });
     getData.then((res) => SetProducts(res));
-  }, [id]);
+  });
 
   return (
     <div>
