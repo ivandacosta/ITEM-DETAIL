@@ -6,7 +6,7 @@ import "./ItemDetailContainer.css";
 
 //components
 import products from "../products/ItemProducts";
-import ItemDetail from "../ItemDetail/ItemDetail";
+import ItemDetail from "../ItemList/ItemList";
 
 function ItemDetailContainer() {
   const [Products, SetProducts] = useState([]);
@@ -24,10 +24,10 @@ function ItemDetailContainer() {
     <div className="ItemDetailContainer">
       {Products.map((product) => {
         return (
-          <div key={product.id}>
-            <Link className="Link" to={`/detail/${product.id}`}>
-              <ItemDetail product={product} />
-            </Link>
+          <div className="ItemDetailContainer" key={product.id}>
+            {/* <Link className="Link" to={`/detail/${product.id}`}> */}
+            <ItemDetail product={product} />
+            {/* </Link> */}
           </div>
         );
       })}

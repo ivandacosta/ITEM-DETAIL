@@ -3,6 +3,7 @@ import products from "../../components/products/ItemProducts";
 import { useParams } from "react-router-dom";
 
 //components
+// import ItemDetail from "../../components/ItemDetail/ItemDetail";
 import ItemDetail from "../../components/ItemDetail/ItemDetail";
 
 const ItemDetails = () => {
